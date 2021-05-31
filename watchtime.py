@@ -8,10 +8,10 @@ import subprocess # to run the cmd command.
 from _thread import * # to run funtion in parallel.
 
 
-subButton = 'var SubForLogin = document.getElementsByClassName("style-scope ytd-channel-name");'
-subButtonClick = "SubForLogin[1].click();"
-bellButton = 'var Bell = document.getElementsByClassName("style-scope ytd-button-renderer style-text size-default");'
-bellButtonClick = "Bell[1].click();"  
+ChannelButton = 'var ChannelForWatchTime = document.getElementsByClassName("style-scope ytd-channel-name");'
+ChannelButtonClick = "ChannelForWatchTime[1].click();"
+PlaylistButton = 'var Playlist = document.getElementsByClassName("style-scope ytd-button-renderer style-text size-default");'
+PlaylistButtonClick = "Playlist[1].click();"  
 
 
 i=0
@@ -62,16 +62,16 @@ while (True) :
         pyautogui.hotkey('f12')
 
         time.sleep(2)
-        pyautogui.typewrite(subButton)
+        pyautogui.typewrite(ChannelButton)
         pyautogui.press('enter')
         time.sleep(2)
-        pyautogui.typewrite(subButtonClick)
+        pyautogui.typewrite(ChannelButtonClick)
         pyautogui.press('enter')
         time.sleep(5)         
-        pyautogui.typewrite(bellButton)
+        pyautogui.typewrite(PlaylistButton)
         pyautogui.press('enter')
         time.sleep(2)
-        pyautogui.typewrite(bellButtonClick)
+        pyautogui.typewrite(PlaylistButtonClick)
         pyautogui.press('enter')
         time.sleep(2)
 
